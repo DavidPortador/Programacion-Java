@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.80.0">
+  <title>Dashboard Template · Bootstrap v5.0</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+  <!-- Custom styles for this template -->
+  <link href="dashboard.css" rel="stylesheet">
+</head>
+<body data-spy="scroll">
+  <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3  col-lg-2 me-0 px-3" href="#">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="me-2" class="bi bi-terminal" viewBox="0 0 16 16">
+        <path d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9zM3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z"/>
+        <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12z"/>
+      </svg>
+      <strong>Programación en Java</strong>
+    </a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link flex-column text-white" href="#Clasificacion">Clasificación</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#Algoritmo">Algoritmo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#Lenguaje">Lenguaje</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#Creacion">Creacion</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#Paradigmas">Paradigmas</a>
+      </li>
+      <li class="nav-item dropdown dropstart">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Otros
+        </a>
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+          <li><a class="dropdown-item nav-link" href="#Editor">Editor</a></li>
+          <li><a class="dropdown-item" href="#Compiladores-e-Interpretes">Compiladores</a></li>
+          <li><a class="dropdown-item" href="#Ejecutables">Ejecutables</a></li>
+          <li><a class="dropdown-item" href="#Consola">Consola</a></li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+  
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="position-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <span data-feather="home"></span>
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file"></span>
+              Orders
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="shopping-cart"></span>
+              Products
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="users"></span>
+              Customers
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="bar-chart-2"></span>
+              Reports
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="layers"></span>
+              Integrations
+            </a>
+          </li>
+        </ul>
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span>Saved reports</span>
+        </h6>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Current month
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Last quarter
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Social engagement
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Year-end sale
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-3">
+    	
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h3"><strong>Fundamentos de Programación</strong></h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <div class="btn-group me-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div data-spy="scroll" data-target="#EpicNavbars" data-offset="0">
+
+              <div class="shadow-lg p-3 mb-5 bg-light rounded">
+                <h4 align="center"><b>Conceptos Básicos</b></h4>
+                <br>
+                <h5  align="justify">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet enim a lectus rutrum dictum in in ipsum. Duis ultricies tincidunt magna luctus pretium. Suspendisse sagittis hendrerit libero, a malesuada ligula lacinia eget. Sed et metus ut eros interdum malesuada et id odio. Suspendisse vel enim sem. Aenean auctor arcu vel placerat consequat. Morbi et porta augue. Cras euismod sapien in bibendum facilisis. Quisque blandit metus a tempor elementum. Maecenas finibus non ex ac sollicitudin. Etiam sed odio lectus. Fusce sit amet sodales elit.
+                  <br><br>
+                  Mauris viverra volutpat diam, id ultricies orci volutpat a. Integer id mi sollicitudin, finibus magna convallis, imperdiet sapien. Nulla fermentum sapien in sollicitudin dapibus. Morbi sed elit ac urna mollis luctus sed quis leo. Etiam odio neque, ullamcorper sit amet mi tempus, sollicitudin ullamcorper nulla. Sed venenatis tristique nibh ut condimentum. Aenean fringilla nibh tortor, in condimentum nulla dictum at. Nam id odio ut quam finibus pellentesque quis et nulla. Aenean vitae laoreet ante. Sed erat nunc, rutrum vitae ullamcorper sed, sodales quis sem. Vivamus eget risus in tellus ullamcorper iaculis. Suspendisse a risus pellentesque, efficitur diam at, laoreet est. Vivamus pharetra eu urna et sollicitudin. In hac habitasse platea dictumst. Aliquam faucibus, mi ut viverra varius, nisl felis convallis quam, et blandit quam orci eu magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                </h5>
+              </div>
+              
+              <br>
+
+              <div class="shadow-sm p-3 mb-5 bg-light rounded">
+
+                <div class="shadow p-3 mb-5 bg-body rounded" id="Clasificacion">
+                  <h4><b>Clasificación del Software de: Sistemas y Aplicación</b></h4>
+                  <h5 align="justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet enim a lectus rutrum dictum in in ipsum. Duis ultricies tincidunt magna luctus pretium. Suspendisse sagittis hendrerit libero, a malesuada ligula lacinia eget. Sed et metus ut eros interdum malesuada et id odio. Suspendisse vel enim sem. Aenean auctor arcu vel placerat consequat. Morbi et porta augue. Cras euismod sapien in bibendum facilisis. Quisque blandit metus a tempor elementum. Maecenas finibus non ex ac sollicitudin. Etiam sed odio lectus. Fusce sit amet sodales elit.
+                    <br><br>
+                    Mauris viverra volutpat diam, id ultricies orci volutpat a. Integer id mi sollicitudin, finibus magna convallis, imperdiet sapien. Nulla fermentum sapien in sollicitudin dapibus. Morbi sed elit ac urna mollis luctus sed quis leo. Etiam odio neque, ullamcorper sit amet mi tempus, sollicitudin ullamcorper nulla. Sed venenatis tristique nibh ut condimentum. Aenean fringilla nibh tortor, in condimentum nulla dictum at. Nam id odio ut quam finibus pellentesque quis et nulla. Aenean vitae laoreet ante. Sed erat nunc, rutrum vitae ullamcorper sed, sodales quis sem. Vivamus eget risus in tellus ullamcorper iaculis. Suspendisse a risus pellentesque, efficitur diam at, laoreet est. Vivamus pharetra eu urna et sollicitudin. In hac habitasse platea dictumst. Aliquam faucibus, mi ut viverra varius, nisl felis convallis quam, et blandit quam orci eu magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    <br><br>
+                    Cras semper bibendum semper. Morbi eleifend, sapien sed consectetur luctus, nisl quam sollicitudin enim, ultrices venenatis enim elit ac dolor. Vestibulum vitae feugiat risus. Nam quis velit non purus bibendum posuere. Sed sed leo eleifend, ornare leo ac, egestas metus. Nunc ante ante, elementum sit amet cursus quis, fringilla nec dui. Proin lacinia malesuada sapien, a aliquet sapien vehicula sit amet. Mauris efficitur auctor erat porta fermentum. Nulla venenatis, leo sit amet pellentesque interdum, dui augue posuere ligula, sed mollis dolor lorem vel massa. Donec venenatis velit sem, ornare porttitor nibh tincidunt pellentesque.
+                    <br><br>
+                    Phasellus eget massa eu erat dapibus feugiat ac vel est. Integer ut ex ac sem pulvinar varius. Phasellus a sem quis nisi accumsan bibendum. Cras volutpat dictum justo, sit amet varius enim hendrerit sed. Proin in rhoncus magna. Nullam a efficitur purus. Donec vel condimentum mi. Cras mollis facilisis sollicitudin.
+                    <br><br>
+                    In eget blandit tellus, ac ultrices massa. Nullam at dolor lorem. In vestibulum est sit amet mi blandit sagittis. Quisque non tempor sapien. Proin at nunc a odio vestibulum commodo. Nulla facilisi. Quisque neque nunc, suscipit et sodales a, convallis nec sapien. Proin nisl nisi, consectetur nec ipsum non, tempor scelerisque nisl. Duis diam ex, mollis ut dapibus a, suscipit at risus. Mauris placerat ullamcorper dolor, mattis dignissim massa. Cras non elementum tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam accumsan pulvinar quam, in suscipit justo venenatis ac.
+                  </h5>
+                </div>
+                <br>
+
+                <div class="shadow p-3 mb-5 bg-body rounded" id="Algoritmo">
+                  <h4><b>Algoritmo</b></h4>
+                  <h5 align="justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet enim a lectus rutrum dictum in in ipsum. Duis ultricies tincidunt magna luctus pretium. Suspendisse sagittis hendrerit libero, a malesuada ligula lacinia eget. Sed et metus ut eros interdum malesuada et id odio. Suspendisse vel enim sem. Aenean auctor arcu vel placerat consequat. Morbi et porta augue. Cras euismod sapien in bibendum facilisis. Quisque blandit metus a tempor elementum. Maecenas finibus non ex ac sollicitudin. Etiam sed odio lectus. Fusce sit amet sodales elit.
+                    <br><br>
+                    Mauris viverra volutpat diam, id ultricies orci volutpat a. Integer id mi sollicitudin, finibus magna convallis, imperdiet sapien. Nulla fermentum sapien in sollicitudin dapibus. Morbi sed elit ac urna mollis luctus sed quis leo. Etiam odio neque, ullamcorper sit amet mi tempus, sollicitudin ullamcorper nulla. Sed venenatis tristique nibh ut condimentum. Aenean fringilla nibh tortor, in condimentum nulla dictum at. Nam id odio ut quam finibus pellentesque quis et nulla. Aenean vitae laoreet ante. Sed erat nunc, rutrum vitae ullamcorper sed, sodales quis sem. Vivamus eget risus in tellus ullamcorper iaculis. Suspendisse a risus pellentesque, efficitur diam at, laoreet est. Vivamus pharetra eu urna et sollicitudin. In hac habitasse platea dictumst. Aliquam faucibus, mi ut viverra varius, nisl felis convallis quam, et blandit quam orci eu magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    <br><br>
+                    Cras semper bibendum semper. Morbi eleifend, sapien sed consectetur luctus, nisl quam sollicitudin enim, ultrices venenatis enim elit ac dolor. Vestibulum vitae feugiat risus. Nam quis velit non purus bibendum posuere. Sed sed leo eleifend, ornare leo ac, egestas metus. Nunc ante ante, elementum sit amet cursus quis, fringilla nec dui. Proin lacinia malesuada sapien, a aliquet sapien vehicula sit amet. Mauris efficitur auctor erat porta fermentum. Nulla venenatis, leo sit amet pellentesque interdum, dui augue posuere ligula, sed mollis dolor lorem vel massa. Donec venenatis velit sem, ornare porttitor nibh tincidunt pellentesque.
+                    <br><br>
+                    Phasellus eget massa eu erat dapibus feugiat ac vel est. Integer ut ex ac sem pulvinar varius. Phasellus a sem quis nisi accumsan bibendum. Cras volutpat dictum justo, sit amet varius enim hendrerit sed. Proin in rhoncus magna. Nullam a efficitur purus. Donec vel condimentum mi. Cras mollis facilisis sollicitudin.
+                    <br><br>
+                    In eget blandit tellus, ac ultrices massa. Nullam at dolor lorem. In vestibulum est sit amet mi blandit sagittis. Quisque non tempor sapien. Proin at nunc a odio vestibulum commodo. Nulla facilisi. Quisque neque nunc, suscipit et sodales a, convallis nec sapien. Proin nisl nisi, consectetur nec ipsum non, tempor scelerisque nisl. Duis diam ex, mollis ut dapibus a, suscipit at risus. Mauris placerat ullamcorper dolor, mattis dignissim massa. Cras non elementum tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam accumsan pulvinar quam, in suscipit justo venenatis ac.
+                  </h5>
+                </div>
+                <br>
+
+                <div class="shadow p-3 mb-5 bg-body rounded" id="Lenguaje">
+                  <h4><b>Lenguaje de Programación</b></h4>
+                  <h5 align="justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet enim a lectus rutrum dictum in in ipsum. Duis ultricies tincidunt magna luctus pretium. Suspendisse sagittis hendrerit libero, a malesuada ligula lacinia eget. Sed et metus ut eros interdum malesuada et id odio. Suspendisse vel enim sem. Aenean auctor arcu vel placerat consequat. Morbi et porta augue. Cras euismod sapien in bibendum facilisis. Quisque blandit metus a tempor elementum. Maecenas finibus non ex ac sollicitudin. Etiam sed odio lectus. Fusce sit amet sodales elit.
+                    <br><br>
+                    Mauris viverra volutpat diam, id ultricies orci volutpat a. Integer id mi sollicitudin, finibus magna convallis, imperdiet sapien. Nulla fermentum sapien in sollicitudin dapibus. Morbi sed elit ac urna mollis luctus sed quis leo. Etiam odio neque, ullamcorper sit amet mi tempus, sollicitudin ullamcorper nulla. Sed venenatis tristique nibh ut condimentum. Aenean fringilla nibh tortor, in condimentum nulla dictum at. Nam id odio ut quam finibus pellentesque quis et nulla. Aenean vitae laoreet ante. Sed erat nunc, rutrum vitae ullamcorper sed, sodales quis sem. Vivamus eget risus in tellus ullamcorper iaculis. Suspendisse a risus pellentesque, efficitur diam at, laoreet est. Vivamus pharetra eu urna et sollicitudin. In hac habitasse platea dictumst. Aliquam faucibus, mi ut viverra varius, nisl felis convallis quam, et blandit quam orci eu magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    <br><br>
+                    Cras semper bibendum semper. Morbi eleifend, sapien sed consectetur luctus, nisl quam sollicitudin enim, ultrices venenatis enim elit ac dolor. Vestibulum vitae feugiat risus. Nam quis velit non purus bibendum posuere. Sed sed leo eleifend, ornare leo ac, egestas metus. Nunc ante ante, elementum sit amet cursus quis, fringilla nec dui. Proin lacinia malesuada sapien, a aliquet sapien vehicula sit amet. Mauris efficitur auctor erat porta fermentum. Nulla venenatis, leo sit amet pellentesque interdum, dui augue posuere ligula, sed mollis dolor lorem vel massa. Donec venenatis velit sem, ornare porttitor nibh tincidunt pellentesque.
+                    <br><br>
+                    Phasellus eget massa eu erat dapibus feugiat ac vel est. Integer ut ex ac sem pulvinar varius. Phasellus a sem quis nisi accumsan bibendum. Cras volutpat dictum justo, sit amet varius enim hendrerit sed. Proin in rhoncus magna. Nullam a efficitur purus. Donec vel condimentum mi. Cras mollis facilisis sollicitudin.
+                    <br><br>
+                    In eget blandit tellus, ac ultrices massa. Nullam at dolor lorem. In vestibulum est sit amet mi blandit sagittis. Quisque non tempor sapien. Proin at nunc a odio vestibulum commodo. Nulla facilisi. Quisque neque nunc, suscipit et sodales a, convallis nec sapien. Proin nisl nisi, consectetur nec ipsum non, tempor scelerisque nisl. Duis diam ex, mollis ut dapibus a, suscipit at risus. Mauris placerat ullamcorper dolor, mattis dignissim massa. Cras non elementum tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam accumsan pulvinar quam, in suscipit justo venenatis ac.
+                  </h5>
+                </div>
+                <br>
+
+                <div class="shadow p-3 mb-5 bg-body rounded" id="Creacion">
+                  <h4><b>Creacion de Software</b></h4>
+                  <h5 align="justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet enim a lectus rutrum dictum in in ipsum. Duis ultricies tincidunt magna luctus pretium. Suspendisse sagittis hendrerit libero, a malesuada ligula lacinia eget. Sed et metus ut eros interdum malesuada et id odio. Suspendisse vel enim sem. Aenean auctor arcu vel placerat consequat. Morbi et porta augue. Cras euismod sapien in bibendum facilisis. Quisque blandit metus a tempor elementum. Maecenas finibus non ex ac sollicitudin. Etiam sed odio lectus. Fusce sit amet sodales elit.
+                    <br><br>
+                    Mauris viverra volutpat diam, id ultricies orci volutpat a. Integer id mi sollicitudin, finibus magna convallis, imperdiet sapien. Nulla fermentum sapien in sollicitudin dapibus. Morbi sed elit ac urna mollis luctus sed quis leo. Etiam odio neque, ullamcorper sit amet mi tempus, sollicitudin ullamcorper nulla. Sed venenatis tristique nibh ut condimentum. Aenean fringilla nibh tortor, in condimentum nulla dictum at. Nam id odio ut quam finibus pellentesque quis et nulla. Aenean vitae laoreet ante. Sed erat nunc, rutrum vitae ullamcorper sed, sodales quis sem. Vivamus eget risus in tellus ullamcorper iaculis. Suspendisse a risus pellentesque, efficitur diam at, laoreet est. Vivamus pharetra eu urna et sollicitudin. In hac habitasse platea dictumst. Aliquam faucibus, mi ut viverra varius, nisl felis convallis quam, et blandit quam orci eu magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    <br><br>
+                    Cras semper bibendum semper. Morbi eleifend, sapien sed consectetur luctus, nisl quam sollicitudin enim, ultrices venenatis enim elit ac dolor. Vestibulum vitae feugiat risus. Nam quis velit non purus bibendum posuere. Sed sed leo eleifend, ornare leo ac, egestas metus. Nunc ante ante, elementum sit amet cursus quis, fringilla nec dui. Proin lacinia malesuada sapien, a aliquet sapien vehicula sit amet. Mauris efficitur auctor erat porta fermentum. Nulla venenatis, leo sit amet pellentesque interdum, dui augue posuere ligula, sed mollis dolor lorem vel massa. Donec venenatis velit sem, ornare porttitor nibh tincidunt pellentesque.
+                    <br><br>
+                    Phasellus eget massa eu erat dapibus feugiat ac vel est. Integer ut ex ac sem pulvinar varius. Phasellus a sem quis nisi accumsan bibendum. Cras volutpat dictum justo, sit amet varius enim hendrerit sed. Proin in rhoncus magna. Nullam a efficitur purus. Donec vel condimentum mi. Cras mollis facilisis sollicitudin.
+                    <br><br>
+                    In eget blandit tellus, ac ultrices massa. Nullam at dolor lorem. In vestibulum est sit amet mi blandit sagittis. Quisque non tempor sapien. Proin at nunc a odio vestibulum commodo. Nulla facilisi. Quisque neque nunc, suscipit et sodales a, convallis nec sapien. Proin nisl nisi, consectetur nec ipsum non, tempor scelerisque nisl. Duis diam ex, mollis ut dapibus a, suscipit at risus. Mauris placerat ullamcorper dolor, mattis dignissim massa. Cras non elementum tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam accumsan pulvinar quam, in suscipit justo venenatis ac.
+
+                  </h5>
+                </div>
+                <br>
+
+                <div class="shadow p-3 mb-5 bg-body rounded" id="Paradigmas">
+                  <h4><b>Paradigmas de Programación</b></h4>
+                  <h5 align="justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet enim a lectus rutrum dictum in in ipsum. Duis ultricies tincidunt magna luctus pretium. Suspendisse sagittis hendrerit libero, a malesuada ligula lacinia eget. Sed et metus ut eros interdum malesuada et id odio. Suspendisse vel enim sem. Aenean auctor arcu vel placerat consequat. Morbi et porta augue. Cras euismod sapien in bibendum facilisis. Quisque blandit metus a tempor elementum. Maecenas finibus non ex ac sollicitudin. Etiam sed odio lectus. Fusce sit amet sodales elit.
+                    <br><br>
+                    Mauris viverra volutpat diam, id ultricies orci volutpat a. Integer id mi sollicitudin, finibus magna convallis, imperdiet sapien. Nulla fermentum sapien in sollicitudin dapibus. Morbi sed elit ac urna mollis luctus sed quis leo. Etiam odio neque, ullamcorper sit amet mi tempus, sollicitudin ullamcorper nulla. Sed venenatis tristique nibh ut condimentum. Aenean fringilla nibh tortor, in condimentum nulla dictum at. Nam id odio ut quam finibus pellentesque quis et nulla. Aenean vitae laoreet ante. Sed erat nunc, rutrum vitae ullamcorper sed, sodales quis sem. Vivamus eget risus in tellus ullamcorper iaculis. Suspendisse a risus pellentesque, efficitur diam at, laoreet est. Vivamus pharetra eu urna et sollicitudin. In hac habitasse platea dictumst. Aliquam faucibus, mi ut viverra varius, nisl felis convallis quam, et blandit quam orci eu magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    <br><br>
+                    Cras semper bibendum semper. Morbi eleifend, sapien sed consectetur luctus, nisl quam sollicitudin enim, ultrices venenatis enim elit ac dolor. Vestibulum vitae feugiat risus. Nam quis velit non purus bibendum posuere. Sed sed leo eleifend, ornare leo ac, egestas metus. Nunc ante ante, elementum sit amet cursus quis, fringilla nec dui. Proin lacinia malesuada sapien, a aliquet sapien vehicula sit amet. Mauris efficitur auctor erat porta fermentum. Nulla venenatis, leo sit amet pellentesque interdum, dui augue posuere ligula, sed mollis dolor lorem vel massa. Donec venenatis velit sem, ornare porttitor nibh tincidunt pellentesque.
+                    <br><br>
+                    Phasellus eget massa eu erat dapibus feugiat ac vel est. Integer ut ex ac sem pulvinar varius. Phasellus a sem quis nisi accumsan bibendum. Cras volutpat dictum justo, sit amet varius enim hendrerit sed. Proin in rhoncus magna. Nullam a efficitur purus. Donec vel condimentum mi. Cras mollis facilisis sollicitudin.
+                    <br><br>
+                    In eget blandit tellus, ac ultrices massa. Nullam at dolor lorem. In vestibulum est sit amet mi blandit sagittis. Quisque non tempor sapien. Proin at nunc a odio vestibulum commodo. Nulla facilisi. Quisque neque nunc, suscipit et sodales a, convallis nec sapien. Proin nisl nisi, consectetur nec ipsum non, tempor scelerisque nisl. Duis diam ex, mollis ut dapibus a, suscipit at risus. Mauris placerat ullamcorper dolor, mattis dignissim massa. Cras non elementum tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam accumsan pulvinar quam, in suscipit justo venenatis ac.
+                  </h5>
+                </div>
+                <br>
+
+                <div class="shadow p-3 mb-5 bg-body rounded" id="Editor">
+                  <h4><b>Editor de Texto</b></h4>
+                  <h5 align="justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet enim a lectus rutrum dictum in in ipsum. Duis ultricies tincidunt magna luctus pretium. Suspendisse sagittis hendrerit libero, a malesuada ligula lacinia eget. Sed et metus ut eros interdum malesuada et id odio. Suspendisse vel enim sem. Aenean auctor arcu vel placerat consequat. Morbi et porta augue. Cras euismod sapien in bibendum facilisis. Quisque blandit metus a tempor elementum. Maecenas finibus non ex ac sollicitudin. Etiam sed odio lectus. Fusce sit amet sodales elit.
+                    <br><br>
+                    Mauris viverra volutpat diam, id ultricies orci volutpat a. Integer id mi sollicitudin, finibus magna convallis, imperdiet sapien. Nulla fermentum sapien in sollicitudin dapibus. Morbi sed elit ac urna mollis luctus sed quis leo. Etiam odio neque, ullamcorper sit amet mi tempus, sollicitudin ullamcorper nulla. Sed venenatis tristique nibh ut condimentum. Aenean fringilla nibh tortor, in condimentum nulla dictum at. Nam id odio ut quam finibus pellentesque quis et nulla. Aenean vitae laoreet ante. Sed erat nunc, rutrum vitae ullamcorper sed, sodales quis sem. Vivamus eget risus in tellus ullamcorper iaculis. Suspendisse a risus pellentesque, efficitur diam at, laoreet est. Vivamus pharetra eu urna et sollicitudin. In hac habitasse platea dictumst. Aliquam faucibus, mi ut viverra varius, nisl felis convallis quam, et blandit quam orci eu magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    <br><br>
+                    Cras semper bibendum semper. Morbi eleifend, sapien sed consectetur luctus, nisl quam sollicitudin enim, ultrices venenatis enim elit ac dolor. Vestibulum vitae feugiat risus. Nam quis velit non purus bibendum posuere. Sed sed leo eleifend, ornare leo ac, egestas metus. Nunc ante ante, elementum sit amet cursus quis, fringilla nec dui. Proin lacinia malesuada sapien, a aliquet sapien vehicula sit amet. Mauris efficitur auctor erat porta fermentum. Nulla venenatis, leo sit amet pellentesque interdum, dui augue posuere ligula, sed mollis dolor lorem vel massa. Donec venenatis velit sem, ornare porttitor nibh tincidunt pellentesque.
+                    <br><br>
+                    Phasellus eget massa eu erat dapibus feugiat ac vel est. Integer ut ex ac sem pulvinar varius. Phasellus a sem quis nisi accumsan bibendum. Cras volutpat dictum justo, sit amet varius enim hendrerit sed. Proin in rhoncus magna. Nullam a efficitur purus. Donec vel condimentum mi. Cras mollis facilisis sollicitudin.
+                    <br><br>
+                    In eget blandit tellus, ac ultrices massa. Nullam at dolor lorem. In vestibulum est sit amet mi blandit sagittis. Quisque non tempor sapien. Proin at nunc a odio vestibulum commodo. Nulla facilisi. Quisque neque nunc, suscipit et sodales a, convallis nec sapien. Proin nisl nisi, consectetur nec ipsum non, tempor scelerisque nisl. Duis diam ex, mollis ut dapibus a, suscipit at risus. Mauris placerat ullamcorper dolor, mattis dignissim massa. Cras non elementum tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam accumsan pulvinar quam, in suscipit justo venenatis ac.
+                    <br><br><br>
+                  </h5>
+                </div>
+                <br>
+
+                <div class="shadow p-3 mb-5 bg-body rounded" id="Compiladores-e-Interpretes">
+                  <h4><b>Compiladores e Intérpretes</b></h4>
+                  <h5 align="justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet enim a lectus rutrum dictum in in ipsum. Duis ultricies tincidunt magna luctus pretium. Suspendisse sagittis hendrerit libero, a malesuada ligula lacinia eget. Sed et metus ut eros interdum malesuada et id odio. Suspendisse vel enim sem. Aenean auctor arcu vel placerat consequat. Morbi et porta augue. Cras euismod sapien in bibendum facilisis. Quisque blandit metus a tempor elementum. Maecenas finibus non ex ac sollicitudin. Etiam sed odio lectus. Fusce sit amet sodales elit.
+                    <br><br>
+                    Mauris viverra volutpat diam, id ultricies orci volutpat a. Integer id mi sollicitudin, finibus magna convallis, imperdiet sapien. Nulla fermentum sapien in sollicitudin dapibus. Morbi sed elit ac urna mollis luctus sed quis leo. Etiam odio neque, ullamcorper sit amet mi tempus, sollicitudin ullamcorper nulla. Sed venenatis tristique nibh ut condimentum. Aenean fringilla nibh tortor, in condimentum nulla dictum at. Nam id odio ut quam finibus pellentesque quis et nulla. Aenean vitae laoreet ante. Sed erat nunc, rutrum vitae ullamcorper sed, sodales quis sem. Vivamus eget risus in tellus ullamcorper iaculis. Suspendisse a risus pellentesque, efficitur diam at, laoreet est. Vivamus pharetra eu urna et sollicitudin. In hac habitasse platea dictumst. Aliquam faucibus, mi ut viverra varius, nisl felis convallis quam, et blandit quam orci eu magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    <br><br>
+                    Cras semper bibendum semper. Morbi eleifend, sapien sed consectetur luctus, nisl quam sollicitudin enim, ultrices venenatis enim elit ac dolor. Vestibulum vitae feugiat risus. Nam quis velit non purus bibendum posuere. Sed sed leo eleifend, ornare leo ac, egestas metus. Nunc ante ante, elementum sit amet cursus quis, fringilla nec dui. Proin lacinia malesuada sapien, a aliquet sapien vehicula sit amet. Mauris efficitur auctor erat porta fermentum. Nulla venenatis, leo sit amet pellentesque interdum, dui augue posuere ligula, sed mollis dolor lorem vel massa. Donec venenatis velit sem, ornare porttitor nibh tincidunt pellentesque.
+                    <br><br>
+                    Phasellus eget massa eu erat dapibus feugiat ac vel est. Integer ut ex ac sem pulvinar varius. Phasellus a sem quis nisi accumsan bibendum. Cras volutpat dictum justo, sit amet varius enim hendrerit sed. Proin in rhoncus magna. Nullam a efficitur purus. Donec vel condimentum mi. Cras mollis facilisis sollicitudin.
+                    <br><br>
+                    In eget blandit tellus, ac ultrices massa. Nullam at dolor lorem. In vestibulum est sit amet mi blandit sagittis. Quisque non tempor sapien. Proin at nunc a odio vestibulum commodo. Nulla facilisi. Quisque neque nunc, suscipit et sodales a, convallis nec sapien. Proin nisl nisi, consectetur nec ipsum non, tempor scelerisque nisl. Duis diam ex, mollis ut dapibus a, suscipit at risus. Mauris placerat ullamcorper dolor, mattis dignissim massa. Cras non elementum tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam accumsan pulvinar quam, in suscipit justo venenatis ac.
+                    <br><br><br>
+                  </h5>
+                </div>
+                <br>
+
+                <div class="shadow p-3 mb-5 bg-body rounded" id="Ejecutables">
+                  <h4><b>Ejecutables</b></h4>
+                  <h5 align="justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet enim a lectus rutrum dictum in in ipsum. Duis ultricies tincidunt magna luctus pretium. Suspendisse sagittis hendrerit libero, a malesuada ligula lacinia eget. Sed et metus ut eros interdum malesuada et id odio. Suspendisse vel enim sem. Aenean auctor arcu vel placerat consequat. Morbi et porta augue. Cras euismod sapien in bibendum facilisis. Quisque blandit metus a tempor elementum. Maecenas finibus non ex ac sollicitudin. Etiam sed odio lectus. Fusce sit amet sodales elit.
+                    <br><br>
+                    Mauris viverra volutpat diam, id ultricies orci volutpat a. Integer id mi sollicitudin, finibus magna convallis, imperdiet sapien. Nulla fermentum sapien in sollicitudin dapibus. Morbi sed elit ac urna mollis luctus sed quis leo. Etiam odio neque, ullamcorper sit amet mi tempus, sollicitudin ullamcorper nulla. Sed venenatis tristique nibh ut condimentum. Aenean fringilla nibh tortor, in condimentum nulla dictum at. Nam id odio ut quam finibus pellentesque quis et nulla. Aenean vitae laoreet ante. Sed erat nunc, rutrum vitae ullamcorper sed, sodales quis sem. Vivamus eget risus in tellus ullamcorper iaculis. Suspendisse a risus pellentesque, efficitur diam at, laoreet est. Vivamus pharetra eu urna et sollicitudin. In hac habitasse platea dictumst. Aliquam faucibus, mi ut viverra varius, nisl felis convallis quam, et blandit quam orci eu magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    <br><br>
+                    Cras semper bibendum semper. Morbi eleifend, sapien sed consectetur luctus, nisl quam sollicitudin enim, ultrices venenatis enim elit ac dolor. Vestibulum vitae feugiat risus. Nam quis velit non purus bibendum posuere. Sed sed leo eleifend, ornare leo ac, egestas metus. Nunc ante ante, elementum sit amet cursus quis, fringilla nec dui. Proin lacinia malesuada sapien, a aliquet sapien vehicula sit amet. Mauris efficitur auctor erat porta fermentum. Nulla venenatis, leo sit amet pellentesque interdum, dui augue posuere ligula, sed mollis dolor lorem vel massa. Donec venenatis velit sem, ornare porttitor nibh tincidunt pellentesque.
+                    <br><br>
+                    Phasellus eget massa eu erat dapibus feugiat ac vel est. Integer ut ex ac sem pulvinar varius. Phasellus a sem quis nisi accumsan bibendum. Cras volutpat dictum justo, sit amet varius enim hendrerit sed. Proin in rhoncus magna. Nullam a efficitur purus. Donec vel condimentum mi. Cras mollis facilisis sollicitudin.
+                    <br><br>
+                    In eget blandit tellus, ac ultrices massa. Nullam at dolor lorem. In vestibulum est sit amet mi blandit sagittis. Quisque non tempor sapien. Proin at nunc a odio vestibulum commodo. Nulla facilisi. Quisque neque nunc, suscipit et sodales a, convallis nec sapien. Proin nisl nisi, consectetur nec ipsum non, tempor scelerisque nisl. Duis diam ex, mollis ut dapibus a, suscipit at risus. Mauris placerat ullamcorper dolor, mattis dignissim massa. Cras non elementum tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam accumsan pulvinar quam, in suscipit justo venenatis ac.
+                    <br><br><br>
+                  </h5>
+                </div>
+                <br>
+
+                <div class="shadow p-3 mb-5 bg-body rounded" id="Consola">
+                  <h4><b>Consola</b></h4>
+                  <h5 align="justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet enim a lectus rutrum dictum in in ipsum. Duis ultricies tincidunt magna luctus pretium. Suspendisse sagittis hendrerit libero, a malesuada ligula lacinia eget. Sed et metus ut eros interdum malesuada et id odio. Suspendisse vel enim sem. Aenean auctor arcu vel placerat consequat. Morbi et porta augue. Cras euismod sapien in bibendum facilisis. Quisque blandit metus a tempor elementum. Maecenas finibus non ex ac sollicitudin. Etiam sed odio lectus. Fusce sit amet sodales elit.
+                    <br><br>
+                    Mauris viverra volutpat diam, id ultricies orci volutpat a. Integer id mi sollicitudin, finibus magna convallis, imperdiet sapien. Nulla fermentum sapien in sollicitudin dapibus. Morbi sed elit ac urna mollis luctus sed quis leo. Etiam odio neque, ullamcorper sit amet mi tempus, sollicitudin ullamcorper nulla. Sed venenatis tristique nibh ut condimentum. Aenean fringilla nibh tortor, in condimentum nulla dictum at. Nam id odio ut quam finibus pellentesque quis et nulla. Aenean vitae laoreet ante. Sed erat nunc, rutrum vitae ullamcorper sed, sodales quis sem. Vivamus eget risus in tellus ullamcorper iaculis. Suspendisse a risus pellentesque, efficitur diam at, laoreet est. Vivamus pharetra eu urna et sollicitudin. In hac habitasse platea dictumst. Aliquam faucibus, mi ut viverra varius, nisl felis convallis quam, et blandit quam orci eu magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    <br><br>
+                    Cras semper bibendum semper. Morbi eleifend, sapien sed consectetur luctus, nisl quam sollicitudin enim, ultrices venenatis enim elit ac dolor. Vestibulum vitae feugiat risus. Nam quis velit non purus bibendum posuere. Sed sed leo eleifend, ornare leo ac, egestas metus. Nunc ante ante, elementum sit amet cursus quis, fringilla nec dui. Proin lacinia malesuada sapien, a aliquet sapien vehicula sit amet. Mauris efficitur auctor erat porta fermentum. Nulla venenatis, leo sit amet pellentesque interdum, dui augue posuere ligula, sed mollis dolor lorem vel massa. Donec venenatis velit sem, ornare porttitor nibh tincidunt pellentesque.
+                    <br><br>
+                    Phasellus eget massa eu erat dapibus feugiat ac vel est. Integer ut ex ac sem pulvinar varius. Phasellus a sem quis nisi accumsan bibendum. Cras volutpat dictum justo, sit amet varius enim hendrerit sed. Proin in rhoncus magna. Nullam a efficitur purus. Donec vel condimentum mi. Cras mollis facilisis sollicitudin.
+                    <br><br>
+                    In eget blandit tellus, ac ultrices massa. Nullam at dolor lorem. In vestibulum est sit amet mi blandit sagittis. Quisque non tempor sapien. Proin at nunc a odio vestibulum commodo. Nulla facilisi. Quisque neque nunc, suscipit et sodales a, convallis nec sapien. Proin nisl nisi, consectetur nec ipsum non, tempor scelerisque nisl. Duis diam ex, mollis ut dapibus a, suscipit at risus. Mauris placerat ullamcorper dolor, mattis dignissim massa. Cras non elementum tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam accumsan pulvinar quam, in suscipit justo venenatis ac.
+                  </h5>
+                </div>
+
+                <div align="center">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item disabled">
+                        <a class="page-link" tabindex="-1" aria-disabled="true">Previous</a>
+                      </li>
+                      <li class="page-item active"><a class="page-link">1</a></li>
+                      <li class="page-item"><a class="page-link" href="algoritmos.html">2</a></li>
+                      <li class="page-item"><a class="page-link" href="introduccion-a-la-programacion.html">3</a></li>
+                      <li class="page-item"><a class="page-link" href="control-de-flujo.html">4</a></li>
+                      <li class="page-item"><a class="page-link" href="arreglos.html">5</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="algoritmos.html">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+  </div>
+</body>
+
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="dashboard.js"></script>
+</body>
+</html>

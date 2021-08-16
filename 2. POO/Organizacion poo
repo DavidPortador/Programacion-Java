@@ -1,0 +1,55 @@
+---------------------------------------------------------------------------
+	~ Programación Orientada a Objetos ~
+------------------------------------------------------------
+1 - Introducción al Paradigma de la Programación Orientada a Objetos 
+	1.1 - Elementos del modelo de objetos: 
+		- Clases
+		- Objetos
+		- Abstracción
+		- Modularidad
+		- Encapsulamiento
+		- Herencia
+		- Polimorfismo
+	1.2 - Lenguaje de modelado unificado
+		- Diagrama de clases
+2 - Clases y objetos
+	2.1 - Declaración de clases
+		- Atributos
+		- Métodos
+		- Encapsulamiento
+	2.2 - Instanciación de una clase
+	2.3 - Referencia al objeto actual
+3 - Herencia
+	3.1 - Definición
+		- Clase base
+		- Clase derivada
+	3.2 - Clasificación
+		- Herencia simple
+		- Herencia múltiple
+	3.3 - Reutilización de miembros heredados
+	3.4 - Referencia al objeto de la clase base
+	3.5 - Constructores y destructores en clases derivadas
+	3.6 - Redefinición de métodos en clases derivadas
+4 - Polimorfismo
+	4.1 - Definición
+	4.2 - Clases abstractas
+		- Definición
+		- Métodos abstractos
+		- Implementación de clases abstractas
+		- Modelado de clases abstractas
+	4.3 - Interfaces: definición, implementación de interfaces, herencia de interfaces
+	4.4 - Variables polimórficas (plantillas): definición, uso y aplicaciones
+	4.5 - Reutilización de código
+5 - Excepciones
+	5.1 - Definición
+	5.2 - Tipos de excepciones
+	5.3 - Propagación de excepciones
+	5.4 - Gestión de excepciones: manejo de excepciones, lanzamiento de excepciones
+	5.5 - Creación y manejo de excepciones definidas por el usuario
+6 - Flujos y archivos
+	6.1 - Definición
+	6.2 - Clasificación: Archivos de texto y binarios
+	6.3 - Operaciones básicas y tipos de acceso
+	6.4 - Manejo de objetos persistentes
+
+------------------------------------------------------------
